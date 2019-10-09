@@ -1,5 +1,6 @@
 # Parsing the Newspaper
 # %%
+import sys,os
 from newspaper import Article
 import statistics
 import nltk
@@ -66,9 +67,9 @@ def predict_result(X_test):
 # print(predict_text(text))
 # %%
 if __name__ == "__main__":
-    while True:
-        url = input("Enter the link to be parsed and analysed : ")
-        # url = "https://timesofindia.indiatimes.com/india/china-snubs-imran-says-resolve-jk-bilaterally/articleshow/71496416.cms"
+#     while True:
+#         url = input("Enter the link to be parsed and analysed : ")
+        url = sys.argv[1]
         article = Article(url, language="en")
         article.download()
         article.parse()
