@@ -1,8 +1,8 @@
 # A tool to classify the writing styles of news articles.
 ### Steps to run the program:
-- Open the terminal in the file location and run  `pip install -r requirements.txt`.
+- Open the terminal in the file location and run  `pip3 install -r requirements.txt`.
 - install NLTK Punkt tokenizer using `nltk.download('punkt')`.
-- Run `python ficto_news.py NEWS_URL`.
+- Run `python3 ficto_news.py NEWS_URL`.
 
 Based on the work [Qureshi, Mohammed Rameez, et al. "A Simple Approach to Classify Fictional and Non-Fictional Genres." Proceedings of the Second Workshop on Storytelling. 2019](https://www.aclweb.org/anthology/W19-3409/).
 
